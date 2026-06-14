@@ -1,0 +1,26 @@
+{
+  "name": "duk-board-engine",
+  "version": "1.0.0",
+  "description": "A generic and modular engine for developing board games on the web.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.0.16"
+  },
+  "main": "vite.config.js",
+  "directories": {
+    "example": "examples"
+  },
+    "keywords": [
+    "boardgame",
+    "engine",
+    "javascript",
+    "framework"
+  ],
+  "author": "Diego Dukón (dieduk89)",
+  "license": "MIT"
+}

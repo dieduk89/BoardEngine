@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers game with Engine.js</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../src/styles/engine.css">
+</head>
+<body>
+    <div id="info">
+        <div id="player1" class="info-item">
+           <div class="piece-label whitebg"></div>
+           <span id="namep1"></span>
+        </div>
+        <div id="player2" class="info-item">
+           <div class="piece-label blackbg"></div>
+           <span id="namep2"></span>
+        </div>
+        <div id="turn" class="info-item">
+            <span>Turn:</span>
+            <div id="white-turn" class="piece-label whitebg"></div>
+            <div id="black-turn" class="piece-label blackbg hide"></div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <h1>Checkers</h1>
+        <p id="brand">Powered by BoardEngine.js</p>
+        <div id="board"></div>
+        <button id="btn-restart" class="button">Restart Game</button>
+    </div>
+    <div id="winner-screen">
+        <h2>END GAME!</h2>
+        <p id="winner-text"></p>
+        <button id="btn-new-game" class="button">New Game</button>
+</div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>

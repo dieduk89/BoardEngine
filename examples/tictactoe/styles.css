@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+    background: skyblue;
+    display: flex;
+    padding-bottom: 50px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#board{
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: #f5f5f5;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+#brand{
+    margin: 0 0 20px 0; 
+    color: #888; 
+    font-size: 20px;
+}
+
+#board .engine-cell{
+    color: darkblue;
+    font-size: 80px;
+    user-select: none;
+}
+
+#board .engine-cell:nth-child(3n), #board .engine-cell:nth-child(3n+2){
+    border-left: 3px solid darkblue;
+}
+
+#board .engine-cell:nth-child(n+1):nth-child(-n+6){
+    border-bottom: 3px solid darkblue;
+}
+
+#display{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#endgame-text{
+    font-size: 24px;
+}
+
+[--current-turn="X"] .engine-cell:empty:hover::before {
+    content: "X";
+    color: gray;
+    font-size: 80px;
+    position: absolute;
+    pointer-events: none; 
+}
+[--current-turn="O"] .engine-cell:empty:hover::before {
+    content: "O";
+    color: gray;
+    font-size: 80px;
+    position: absolute;
+    pointer-events: none;
+}
+
+#new-game-button{
+    display: none;
+    background: darkblue; 
+    color: whitesmoke; 
+    border: none; 
+    padding: 12px 25px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    cursor: pointer;
+    height: 50px;
+    margin-left: 20px;
+    transition: all 0.2s;
+}
+
+#new-game-button:hover{
+    scale: 1.1;
+    box-shadow: 0 0 5px black;
+}

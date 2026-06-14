@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
+
+#wrapper {
+    flex: 7;
+    height: 100%;
+    background: #333;
+    display: flex;
+    padding-bottom: 50px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#board{
+    width: 500px;
+    height: 500px;
+    border: 10px solid darkolivegreen;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #1a1a1a;
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: #f5f5f5;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+#brand{
+    margin: 0 0 20px 0; 
+    color: #888; 
+    font-size: 20px;
+}
+
+#info{
+    flex: 2;
+    background-color: #1a1a1a;
+    height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.info-item{
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    background: darkolivegreen;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.info-item .piece-label{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.whitebg{
+    background: white;
+}
+
+.blackbg{
+    background: black;
+}
+
+.hide{
+    display: none;
+}
+
+#btn-restart{
+    background: #e74c3c; 
+    color: white; 
+    border: none; 
+    padding: 12px 25px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: all 0.2s;
+}
+
+#winner-screen{
+    display: none; 
+    position: fixed; 
+    top: 0; left: 0; width: 100%; height: 100%; 
+    background: rgba(0,0,0,0.85); 
+    backdrop-filter: blur(5px);
+    z-index: 100; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+}
+
+#winner-screen h2{
+    font-size: 40px; 
+    margin: 0; 
+    color: #deff9a
+}
+
+#winner-text{
+    font-size: 24px; 
+    margin: 0;
+}
+
+#btn-new-game{
+    background: #deff9a; 
+    color: #121212; 
+    border: none; 
+    padding: 12px 25px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover{
+    scale: 1.1;
+    box-shadow: 0 0 5px white;
+}
